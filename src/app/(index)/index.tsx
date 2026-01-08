@@ -1,4 +1,3 @@
-import * as AC from "@bacons/apple-colors";
 import { ScrollView, Text } from "react-native";
 
 export default function IndexRoute() {
@@ -6,17 +5,11 @@ export default function IndexRoute() {
     <ScrollView
       contentInsetAdjustmentBehavior="automatic"
       style={{
-        backgroundColor: AC.systemBackground,
         padding: 16,
+        backgroundColor: "white",
       }}
     >
-      <Text
-        style={{
-          color: AC.label,
-        }}
-      >
-        Hello world
-      </Text>
+      <Text>Hello world</Text>
     </ScrollView>
   );
 }

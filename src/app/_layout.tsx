@@ -2,13 +2,31 @@ import { ThemeProvider } from "@/components/theme-provider";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { Tabs as WebTabs } from "expo-router/tabs";
 import { Icon, Label, NativeTabs } from "expo-router/unstable-native-tabs";
+import { useWindowDimensions } from "react-native";
 
 export default function Layout() {
-  // Keep the splash screen visible while we fetch resources
+  const { width } = useWindowDimensions();
+
+  const isMd = width >= 768;
+  const isLg = width >= 1024;
+
   return (
     <ThemeProvider>
       {process.env.EXPO_OS === "web" ? (
-        <WebTabs screenOptions={{ headerShown: false }}>
+        <WebTabs
+          screenOptions={{
+            headerShown: false,
+            ...(isMd
+              ? {
+                  tabBarPosition: "left",
+                  tabBarVariant: "material",
+                  tabBarLabelPosition: isLg ? undefined : "below-icon",
+                }
+              : {
+                  tabBarPosition: "bottom",
+                }),
+          }}
+        >
           <WebTabs.Screen
             name="(index)"
             options={{
