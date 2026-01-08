@@ -1,8 +1,13 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { Tabs as WebTabs } from "expo-router/tabs";
-import { Icon, Label, NativeTabs } from "expo-router/unstable-native-tabs";
-import { useWindowDimensions } from "react-native";
+import {
+  Icon,
+  Label,
+  NativeTabs,
+  VectorIcon,
+} from "expo-router/unstable-native-tabs";
+import { Platform, useWindowDimensions } from "react-native";
 
 export default function Layout() {
   const { width } = useWindowDimensions();
@@ -47,15 +52,24 @@ export default function Layout() {
           <NativeTabs.Trigger name="(index)">
             <Label>Home</Label>
             <Icon
-              sf={{
-                default: "house",
-                selected: "house.fill",
-              }}
+              {...Platform.select({
+                ios: { sf: { default: "house", selected: "house.fill" } },
+                default: {
+                  src: <VectorIcon family={MaterialIcons} name="home" />,
+                },
+              })}
             />
           </NativeTabs.Trigger>
           <NativeTabs.Trigger name="(info)">
             <Label>Info</Label>
-            <Icon sf="cursorarrow.rays" />
+            <Icon
+              {...Platform.select({
+                ios: { sf: "cursorarrow.rays" },
+                default: {
+                  src: <VectorIcon family={MaterialIcons} name="info" />,
+                },
+              })}
+            />
           </NativeTabs.Trigger>
         </NativeTabs>
       )}
