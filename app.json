@@ -4,6 +4,9 @@
     "orientation": "default",
     "scheme": "acme",
     "userInterfaceStyle": "automatic",
+    "web": {
+      "output": "server"
+    },
     "android": {
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
