@@ -8,7 +8,7 @@ import { Stack } from "expo-router";
 export default function Layout() {
   return (
     <ThemeProvider>
-      <Stack />
+      <Stack screenOptions={{ headerShown: false }} />
     </ThemeProvider>
   );
 }
