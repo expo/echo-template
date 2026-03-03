@@ -8,7 +8,6 @@
       "output": "server"
     },
     "android": {
-      "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "experiments": {
