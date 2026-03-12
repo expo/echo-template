@@ -5,11 +5,10 @@
     "": {
       "name": "echo-template",
       "dependencies": {
-        "@rnrepo/expo-config-plugin": "./rnrepo-expo-config-plugin-0.3.0-beta.1-expo-agent.0.tgz",
         "@expo/vector-icons": "^15.0.3",
         "@react-navigation/bottom-tabs": "^7.10.1",
         "@react-navigation/native": "^7.1.28",
-        "@rnrepo/build-tools": "./rnrepo-build-tools-0.1.1-beta.0-expo-agent.0.tgz",
+        "@rnrepo/expo-config-plugin": "^0.3.0-beta.0",
         "expo": "~55.0.4",
         "expo-constants": "~55.0.7",
         "expo-dev-client": "^55.0.11",
@@ -38,9 +37,6 @@
         "typescript": "~5.9.2",
       },
     },
-  },
-  "overrides": {
-    "@rnrepo/build-tools": "./rnrepo-build-tools-0.1.1-beta.0-expo-agent.0.tgz",
   },
   "packages": {
     "@babel/code-frame": ["@babel/code-frame@7.29.0", "", { "dependencies": { "@babel/helper-validator-identifier": "^7.28.5", "js-tokens": "^4.0.0", "picocolors": "^1.1.1" } }, "sha512-9NhCeYjq9+3uxgdtp20LSiJXJvN0FeCtNGpJxuMFZ1Kv3cWUNb6DOhJwUvcVCzKGR66cw4njwM6hrJLqgOwbcw=="],
@@ -401,9 +397,9 @@
 
     "@react-navigation/routers": ["@react-navigation/routers@7.5.3", "", { "dependencies": { "nanoid": "^3.3.11" } }, "sha512-1tJHg4KKRJuQ1/EvJxatrMef3NZXEPzwUIUZ3n1yJ2t7Q97siwRtbynRpQG9/69ebbtiZ8W3ScOZF/OmhvM4Rg=="],
 
-    "@rnrepo/build-tools": ["@rnrepo/build-tools@./rnrepo-build-tools-0.1.1-beta.0-expo-agent.0.tgz", {}],
+    "@rnrepo/build-tools": ["@rnrepo/build-tools@0.1.0", "", {}, "sha512-1abLGlTsBt/7uZWcryZU8W01vlzqqBblcL2w+Jb3JBRFKwK6O5YeZCeDFD3alGnc99Rj8IadNEM7YEbQEViQEw=="],
 
-    "@rnrepo/expo-config-plugin": ["@rnrepo/expo-config-plugin@./rnrepo-expo-config-plugin-0.3.0-beta.1-expo-agent.0.tgz", { "dependencies": { "@expo/config-plugins": "*", "@expo/config-types": "*", "@rnrepo/build-tools": "0.1.1-beta.0-expo-agent.0" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }],
+    "@rnrepo/expo-config-plugin": ["@rnrepo/expo-config-plugin@0.3.0-beta.0", "", { "dependencies": { "@expo/config-plugins": "*", "@expo/config-types": "*", "@rnrepo/build-tools": "0.1.0" }, "peerDependencies": { "expo": "*", "react": "*", "react-native": "*" } }, "sha512-pL1pi3V9SnC02r/G4iKPJQUGJ5yo1wLu7nCDctS1FZGnnN2/SuuS1AZ/6sYS6p4CZCj+BXm2FtEDXm/1sWdmzg=="],
 
     "@sinclair/typebox": ["@sinclair/typebox@0.27.10", "", {}, "sha512-MTBk/3jGLNB2tVxv6uLlFh1iu64iYOQ2PbdOSK3NW8JZsmlaOh2q6sdtKowBhfw8QFLmYNzTW4/oK4uATIi6ZA=="],
 

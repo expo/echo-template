@@ -9,8 +9,7 @@
     "@expo/vector-icons": "^15.0.3",
     "@react-navigation/bottom-tabs": "^7.10.1",
     "@react-navigation/native": "^7.1.28",
-    "@rnrepo/build-tools": "./rnrepo-build-tools-0.1.1-beta.0-expo-agent.0.tgz",
-    "@rnrepo/expo-config-plugin": "./rnrepo-expo-config-plugin-0.3.0-beta.1-expo-agent.0.tgz",
+    "@rnrepo/expo-config-plugin": "^0.3.0-beta.0",
     "expo": "~55.0.4",
     "expo-constants": "~55.0.7",
     "expo-dev-client": "^55.0.11",
@@ -37,9 +36,6 @@
   "devDependencies": {
     "@types/react": "~19.2.2",
     "typescript": "~5.9.2"
-  },
-  "overrides": {
-    "@rnrepo/build-tools": "./rnrepo-build-tools-0.1.1-beta.0-expo-agent.0.tgz"
   },
   "private": true
 }
