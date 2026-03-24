@@ -1,3 +1,13 @@
+Expo Router project with API Routes and server-rendering.
+
+```
+src/
+├── app/ # routes
+│   ├── _layout.tsx
+│   └── index.tsx
+└── components/
+```
+
 ## Principles
 
 - Target iOS, Android, web.
