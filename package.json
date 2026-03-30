@@ -10,6 +10,7 @@
     "@react-navigation/bottom-tabs": "^7.10.1",
     "@react-navigation/native": "^7.1.28",
     "expo": "~55.0.4",
+    "expo-build-properties": "~55.0.10",
     "expo-constants": "~55.0.7",
     "expo-dev-client": "^55.0.11",
     "expo-font": "~55.0.4",
