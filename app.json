@@ -33,12 +33,6 @@
       ],
       "expo-splash-screen",
       "expo-status-bar"
-    ],
-    "extra": {
-      "router": {},
-      "eas": {
-        "projectId": "a4f4501f-9f48-491a-9f8a-b46388c3d289"
-      }
-    }
+    ]
   }
 }
